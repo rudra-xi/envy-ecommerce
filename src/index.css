@@ -1,0 +1,71 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Outfit:wght@100..900&display=swap");
+
+/* Tailwind CSS base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for theme colors */
+:root {
+	--primary: #f7f7ff;
+	--secondary: #14123d;
+	--accent: #fca311;
+}
+
+/* Base styles for html and body */
+html,
+body {
+	font-family: "Outfit", serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: var(--primary);
+	color: var(--secondary);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+	background: var(--primary);
+	width: 3px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+	height: 50px;
+}
+
+/* Active link styles */
+a.active span {
+	display: block;
+}
+
+.libre-text {
+	font-family: "Abhaya Libre", serif;
+}
+
+/* custom checkbox */
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid var(--secondary);
+	height: 10px;
+	width: 10px;
+	margin-top: 3px;
+	outline: none;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked {
+	background-color: var(--accent);
+}
+
+/* Responsive styles for screens smaller than 767px */
+@media (max-width: 767px) {
+	a.active {
+		background: var(--secondary);
+		color: var(--primary);
+	}
+}
