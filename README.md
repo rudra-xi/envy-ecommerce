@@ -2,7 +2,7 @@
 
 Envy E-commerce is a modern and responsive e-commerce web application built with Vite and ReactJS. It features a variety of pages including home, product collection, product details, cart, and more. The styling is done using TailwindCSS version 3.4.17.
 
-![Envy](https://imgur.com/RwyjkJ0.gif)
+![Envy](https://imgur.com/RwyjkJ0)
 
 ## Features
 
